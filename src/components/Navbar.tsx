@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 const navLinks = [
   { name: "Bosh sahifa", href: "#home" },
   { name: "Men haqimda", href: "#about" },
+  { name: "Qiziqishlar", href: "#interests" },
   { name: "Ko'nikmalar", href: "#skills" },
   { name: "Loyihalar", href: "#projects" },
   { name: "Aloqa", href: "#contact" },
