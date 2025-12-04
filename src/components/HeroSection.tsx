@@ -12,32 +12,32 @@ const HeroSection = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="animate-fade-up">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              👋 Welcome to my portfolio
+              👋 Portfoliomga xush kelibsiz
             </span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up-delay-1">
-            Hi, I'm{" "}
+            Salom, men{" "}
             <span className="gradient-text">Farrux Xudarganov</span>
           </h1>
           
           <p className="text-xl sm:text-2xl text-muted-foreground mb-4 animate-fade-up-delay-2">
-            Young Frontend Developer
+            Yosh Frontend Dasturchi
           </p>
           
           <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto animate-fade-up-delay-3">
-            A 14-year-old passionate about creating clean, fast, and user-friendly websites from Uzbekistan.
+            14 yoshli, toza, tez va foydalanuvchilarga qulay veb-saytlar yaratishga ishtiyoqmand dasturchi. O'zbekistondan.
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-4 animate-fade-up-delay-4">
             <Button variant="hero" size="xl" asChild>
               <a href="#projects">
-                View My Work
+                Ishlarimni ko'rish
               </a>
             </Button>
             <Button variant="outline" size="xl" asChild>
               <a href="#contact">
-                Get In Touch
+                Bog'lanish
               </a>
             </Button>
           </div>

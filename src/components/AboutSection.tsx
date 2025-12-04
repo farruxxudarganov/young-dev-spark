@@ -7,10 +7,10 @@ const AboutSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-              About Me
+              Men haqimda
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Get to Know Me
+              Meni tanishtiray
             </h2>
           </div>
           
@@ -23,7 +23,7 @@ const AboutSection = () => {
                       <span className="text-5xl font-bold text-primary-foreground">FX</span>
                     </div>
                     <p className="text-lg font-semibold">Farrux Xudarganov</p>
-                    <p className="text-muted-foreground">Frontend Developer</p>
+                    <p className="text-muted-foreground">Frontend Dasturchi</p>
                   </div>
                 </div>
               </div>
@@ -31,7 +31,7 @@ const AboutSection = () => {
             
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I am a 14-year-old beginner frontend developer passionate about creating clean, fast, and user-friendly websites. I enjoy building small projects, learning new technologies, and improving my coding skills every day.
+                Men 14 yoshli boshlang'ich frontend dasturchiman. Toza, tez va foydalanuvchilarga qulay veb-saytlar yaratishga qiziqaman. Kichik loyihalar qurish, yangi texnologiyalarni o'rganish va har kuni dasturlash ko'nikmalarimni oshirishni yaxshi ko'raman.
               </p>
               
               <div className="space-y-4">
@@ -40,8 +40,8 @@ const AboutSection = () => {
                     <Calendar className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Age</p>
-                    <p className="font-medium">14 years old</p>
+                    <p className="text-sm text-muted-foreground">Yosh</p>
+                    <p className="font-medium">14 yosh</p>
                   </div>
                 </div>
                 
@@ -50,8 +50,8 @@ const AboutSection = () => {
                     <MapPin className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="font-medium">Khorezm, Shovot, Uzbekistan</p>
+                    <p className="text-sm text-muted-foreground">Manzil</p>
+                    <p className="font-medium">Xorazm, Shovot, O'zbekiston</p>
                   </div>
                 </div>
                 
@@ -60,8 +60,8 @@ const AboutSection = () => {
                     <Code className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Focus</p>
-                    <p className="font-medium">Frontend Development</p>
+                    <p className="text-sm text-muted-foreground">Yo'nalish</p>
+                    <p className="font-medium">Frontend Dasturlash</p>
                   </div>
                 </div>
               </div>

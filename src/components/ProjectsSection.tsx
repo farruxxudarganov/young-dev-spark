@@ -1,10 +1,10 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Button } from "./ui/button";
 
 const projects = [
   {
     title: "Streamline Landing Page",
-    description: "A minimalistic and fast landing page built to practice modern UI principles. Features clean design, smooth animations, and responsive layout.",
+    description: "Zamonaviy UI tamoyillarini amaliyotda qo'llash uchun yaratilgan minimalistik va tez landing sahifa. Toza dizayn, silliq animatsiyalar va responsive layout.",
     tags: ["HTML", "CSS", "JavaScript"],
     image: "gradient",
     link: "https://streamline-xi.vercel.app/",
@@ -18,13 +18,13 @@ const ProjectsSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-              My Projects
+              Mening loyihalarim
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Featured Work
+              Tanlangan ishlar
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Here are some of the projects I've been working on
+              Bu yerda men ustida ishlagan ba'zi loyihalar
             </p>
           </div>
           
@@ -43,7 +43,7 @@ const ProjectsSection = () => {
                           <span className="text-3xl">🚀</span>
                         </div>
                         <p className="text-lg font-semibold">Streamline</p>
-                        <p className="text-sm opacity-80">Landing Page</p>
+                        <p className="text-sm opacity-80">Landing Sahifa</p>
                       </div>
                     </div>
                     <div className="absolute inset-0 bg-foreground/5 group-hover:bg-transparent transition-colors duration-500" />
@@ -68,9 +68,9 @@ const ProjectsSection = () => {
                     
                     <div className="flex gap-3">
                       <Button variant="hero" size="lg" asChild>
-                        <a href={project.link}>
+                        <a href={project.link} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-4 h-4" />
-                          View Project
+                          Loyihani ko'rish
                         </a>
                       </Button>
                     </div>
