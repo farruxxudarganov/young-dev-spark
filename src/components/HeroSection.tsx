@@ -1,7 +1,10 @@
 import { ArrowDown, Github, Mail } from "lucide-react";
 import { Button } from "./ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="home" className="min-h-screen gradient-hero flex items-center justify-center pt-16 relative overflow-hidden">
       {/* Background decoration */}
@@ -12,32 +15,32 @@ const HeroSection = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="animate-fade-up">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              👋 Portfoliomga xush kelibsiz
+              {t.hero.welcome}
             </span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up-delay-1">
-            Salom, men{" "}
+            {t.hero.greeting}{" "}
             <span className="gradient-text">Farrux Xudarganov</span>
           </h1>
           
           <p className="text-xl sm:text-2xl text-muted-foreground mb-4 animate-fade-up-delay-2">
-            Yosh Frontend Dasturchi
+            {t.hero.title}
           </p>
           
           <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto animate-fade-up-delay-3">
-            14 yoshli, toza, tez va foydalanuvchilarga qulay veb-saytlar yaratishga ishtiyoqmand dasturchi. O'zbekistondan.
+            {t.hero.description}
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-4 animate-fade-up-delay-4">
-            <Button variant="hero" size="xl" asChild>
+            <Button variant="hero" size="xl" asChild className="animate-pulse-glow">
               <a href="#projects">
-                Ishlarimni ko'rish
+                {t.hero.viewWork}
               </a>
             </Button>
             <Button variant="outline" size="xl" asChild>
               <a href="#contact">
-                Bog'lanish
+                {t.hero.getInTouch}
               </a>
             </Button>
           </div>
@@ -47,13 +50,13 @@ const HeroSection = () => {
               href="https://github.com/farruxxudarganov"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
+              className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
             >
               <Github className="w-6 h-6" />
             </a>
             <a
               href="mailto:farruxxudarganov1@gmail.com"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
+              className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
             >
               <Mail className="w-6 h-6" />
             </a>
