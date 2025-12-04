@@ -3,11 +3,11 @@ import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
+  { name: "Bosh sahifa", href: "#home" },
+  { name: "Men haqimda", href: "#about" },
+  { name: "Ko'nikmalar", href: "#skills" },
+  { name: "Loyihalar", href: "#projects" },
+  { name: "Aloqa", href: "#contact" },
 ];
 
 const Navbar = () => {

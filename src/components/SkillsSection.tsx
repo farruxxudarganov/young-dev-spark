@@ -18,7 +18,7 @@ const skills = [
     color: "from-yellow-400 to-yellow-600",
   },
   {
-    name: "Responsive Design",
+    name: "Responsive Dizayn",
     icon: "📱",
     level: 80,
     color: "from-green-400 to-green-600",
@@ -38,13 +38,13 @@ const SkillsSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-              My Skills
+              Mening ko'nikmalarim
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Technologies I Work With
+              Men ishlaydigan texnologiyalar
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              I'm constantly learning and improving my skills in these technologies
+              Men bu texnologiyalarda doimiy ravishda o'rganib va rivojlanib boraman
             </p>
           </div>
           

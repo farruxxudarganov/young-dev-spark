@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 const contactInfo = [
   {
     icon: Mail,
-    label: "Email",
+    label: "Elektron pochta",
     value: "farruxxudarganov1@gmail.com",
     href: "mailto:farruxxudarganov1@gmail.com",
   },
@@ -16,14 +16,14 @@ const contactInfo = [
   },
   {
     icon: Phone,
-    label: "Phone",
+    label: "Telefon",
     value: "+998 94 299 40 04",
     href: "tel:+998942994004",
   },
   {
     icon: MapPin,
-    label: "Location",
-    value: "Khorezm, Shovot, Uzbekistan",
+    label: "Manzil",
+    value: "Xorazm, Shovot, O'zbekiston",
     href: null,
   },
 ];
@@ -35,13 +35,13 @@ const ContactSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-              Get In Touch
+              Bog'lanish
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Let's Work Together
+              Keling, birga ishlaymiz
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Feel free to reach out if you have any questions or just want to say hi!
+              Savollaringiz bo'lsa yoki shunchaki salom aytmoqchi bo'lsangiz, bemalol murojaat qiling!
             </p>
           </div>
           
@@ -82,7 +82,7 @@ const ContactSection = () => {
             <Button variant="hero" size="xl" asChild>
               <a href="mailto:farruxxudarganov1@gmail.com">
                 <Mail className="w-5 h-5" />
-                Send Me a Message
+                Menga xabar yuboring
               </a>
             </Button>
           </div>
