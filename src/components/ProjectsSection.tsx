@@ -1,30 +1,33 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "./ui/button";
-
-const projects = [
-  {
-    title: "Streamline Landing Page",
-    description: "Zamonaviy UI tamoyillarini amaliyotda qo'llash uchun yaratilgan minimalistik va tez landing sahifa. Toza dizayn, silliq animatsiyalar va responsive layout.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    image: "gradient",
-    link: "https://streamline-xi.vercel.app/",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ProjectsSection = () => {
+  const { t } = useLanguage();
+
+  const projects = [
+    {
+      title: "Streamline Landing Page",
+      description: t.projects.projectDesc,
+      tags: ["HTML", "CSS", "JavaScript"],
+      image: "gradient",
+      link: "https://streamline-xi.vercel.app/",
+    },
+  ];
+
   return (
     <section id="projects" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-              Mening loyihalarim
+              {t.projects.badge}
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Tanlangan ishlar
+              {t.projects.title}
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
-              Bu yerda men ustida ishlagan ba'zi loyihalar
+              {t.projects.description}
             </p>
           </div>
           
@@ -39,11 +42,11 @@ const ProjectsSection = () => {
                     <div className="absolute inset-0 gradient-bg opacity-90" />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center text-primary-foreground p-8">
-                        <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-primary-foreground/20 flex items-center justify-center">
+                        <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-primary-foreground/20 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
                           <span className="text-3xl">🚀</span>
                         </div>
                         <p className="text-lg font-semibold">Streamline</p>
-                        <p className="text-sm opacity-80">Landing Sahifa</p>
+                        <p className="text-sm opacity-80">{t.projects.landingPage}</p>
                       </div>
                     </div>
                     <div className="absolute inset-0 bg-foreground/5 group-hover:bg-transparent transition-colors duration-500" />
@@ -59,7 +62,7 @@ const ProjectsSection = () => {
                       {project.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium"
+                          className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium hover:bg-primary/20 transition-colors duration-300"
                         >
                           {tag}
                         </span>
@@ -70,7 +73,7 @@ const ProjectsSection = () => {
                       <Button variant="hero" size="lg" asChild>
                         <a href={project.link} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-4 h-4" />
-                          Loyihani ko'rish
+                          {t.projects.viewProject}
                         </a>
                       </Button>
                     </div>

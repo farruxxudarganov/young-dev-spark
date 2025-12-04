@@ -6,21 +6,27 @@ import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import { LanguageProvider } from "@/contexts/LanguageContext";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <InterestsSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <LanguageProvider>
+        <div className="min-h-screen bg-background transition-colors duration-300">
+          <Navbar />
+          <main>
+            <HeroSection />
+            <AboutSection />
+            <InterestsSection />
+            <SkillsSection />
+            <ProjectsSection />
+            <ContactSection />
+          </main>
+          <Footer />
+        </div>
+      </LanguageProvider>
+    </ThemeProvider>
   );
 };
 

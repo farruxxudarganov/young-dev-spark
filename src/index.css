@@ -59,6 +59,53 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 189 94% 43%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 172 66% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 189 94% 43%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 8%) 0%, hsl(222 47% 12%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 11%) 0%, hsl(222 47% 8%) 100%);
+    
+    --shadow-soft: 0 4px 20px -4px hsl(189 94% 43% / 0.2);
+    --shadow-card: 0 8px 30px -8px hsl(0 0% 0% / 0.3);
+    --shadow-elevated: 0 20px 50px -12px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 40px hsl(189 94% 43% / 0.4);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
   * {
     @apply border-border;
   }
@@ -68,7 +115,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-sans antialiased transition-colors duration-300;
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 }
@@ -133,12 +180,27 @@
     animation: fadeUp 0.6s ease-out 0.4s forwards;
     opacity: 0;
   }
+
+  .section-fade-in {
+    animation: sectionFadeIn 0.8s ease-out forwards;
+  }
 }
 
 @keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sectionFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -155,6 +217,29 @@
   }
 }
 
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(189 94% 43% / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(189 94% 43% / 0.5);
+  }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, .card, input, select {
+  @apply transition-all duration-300;
+}
+
+/* Hover lift effect */
+.hover-lift {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-elevated;
 }
