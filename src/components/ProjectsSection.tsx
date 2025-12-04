@@ -7,7 +7,7 @@ const projects = [
     description: "A minimalistic and fast landing page built to practice modern UI principles. Features clean design, smooth animations, and responsive layout.",
     tags: ["HTML", "CSS", "JavaScript"],
     image: "gradient",
-    link: "#",
+    link: "https://streamline-xi.vercel.app/",
   },
 ];
 
