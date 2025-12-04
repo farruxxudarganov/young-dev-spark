@@ -25,7 +25,7 @@ const Footer = () => {
               <Mail className="w-5 h-5" />
             </a>
             <a
-              href="tel:+998942994004"
+              href="tel:+998914299404"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
             >
               <Phone className="w-5 h-5" />
